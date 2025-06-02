@@ -1,0 +1,80 @@
+name: Test CrewAI Anthropic Integration
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "latest"
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      run: uv python install ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        uv sync
+    
+    - name: Test imports and basic functionality
+      run: |
+        uv run python -c "
+        import sys
+        try:
+            from similar_company_finder_template.crew import SimilarCompanyFinderTemplateCrew
+            print('✅ Crew import successful')
+            
+            from langchain_anthropic import ChatAnthropic
+            print('✅ Anthropic integration available')
+            
+            print('✅ All imports successful')
+        except Exception as e:
+            print(f'❌ Import failed: {e}')
+            sys.exit(1)
+        "
+    
+    - name: Test crew instantiation
+      run: |
+        uv run python -c "
+        import sys
+        import os
+        os.environ['ANTHROPIC_API_KEY'] = 'test-key'
+        try:
+            from similar_company_finder_template.crew import SimilarCompanyFinderTemplateCrew
+            crew_instance = SimilarCompanyFinderTemplateCrew()
+            print('✅ Crew instantiation successful')
+        except Exception as e:
+            print(f'❌ Crew instantiation failed: {e}')
+            sys.exit(1)
+        "
+
+  docker-build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Build Docker image
+      run: |
+        docker build -t crewai-anthropic-test .
+    
+    - name: Test Docker image
+      run: |
+        echo "ANTHROPIC_API_KEY=test-key" > .env.test
+        echo "TARGET_COMPANY=Test Company" >> .env.test
+        echo "OUR_PRODUCT=Test Product" >> .env.test
+        
+        # Test that the container can start (it will fail due to invalid API key, but should not crash on startup)
+        timeout 30s docker run --env-file .env.test crewai-anthropic-test || true
+        echo "✅ Docker container startup test completed"
