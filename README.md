@@ -1,6 +1,13 @@
-# SimilarCompanyFinderTemplate Crew
+# CrewAI Anthropic Similar Company Finder
 
-Welcome to the SimilarCompanyFinderTemplate Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+[![Test Status](https://github.com/samehjarour/crewai-anthropic-similar-company-finder/workflows/Test%20CrewAI%20Anthropic%20Integration/badge.svg)](https://github.com/samehjarour/crewai-anthropic-similar-company-finder/actions)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![CrewAI](https://img.shields.io/badge/CrewAI-0.76.2+-green.svg)](https://crewai.com)
+[![Anthropic Claude](https://img.shields.io/badge/Anthropic-Claude%203.5%20Sonnet-orange.svg)](https://anthropic.com)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://docker.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Welcome to the CrewAI Anthropic Similar Company Finder project, powered by [crewAI](https://crewai.com) and [Anthropic's Claude](https://anthropic.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
 ## Installation
 
